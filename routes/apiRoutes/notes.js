@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const {} = require('../../lib/notes');
+const {validateNote, createNewNote} = require('../../lib/notes');
 const { notes } = require("../../data/notes")
 
 router.get("/notes", (req, res) => {
@@ -8,6 +8,15 @@ router.get("/notes", (req, res) => {
     console.log("query")
   }
   res.json(results);
+})
+
+router.post("/notes", (req,res) => {
+  if(!validateNote(req.body)) {
+    res.status(400).send("The note is not properly formatted.")
+  } else {
+    const note = createNewNote(req.body, notes);
+    res.json(note)
+  }
 })
 
 module.exports = router;

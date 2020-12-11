@@ -4,10 +4,9 @@ const { notes } = require("../../data/notes")
 
 router.get("/notes", (req, res) => {
   let results = notes;
-  console.log(results)
-  // if (req.query) {
-  //   console.log("query")
-  // }
+  if (req.query) {
+    console.log("query")
+  }
   res.json(results);
 })
 

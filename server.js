@@ -14,7 +14,7 @@ app.use("/api", apiRoutes);
 // link app to routes for html
 app.use('/', htmlRoutes);
 // set up path to public  directory
-app.use(express.static("Public"))
+app.use(express.static("public"))
 
 app.listen(PORT, () => {
   console.log(`API server is now open on ${PORT}`)

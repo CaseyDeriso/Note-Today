@@ -3,6 +3,10 @@
 
 ![GitHub issues](https://img.shields.io/github/issues/CaseyDeriso/Note-Today) ![GitHub pull requests](https://img.shields.io/github/issues-pr/CaseyDeriso/Note-Today) ![license](https://img.shields.io/github/license/CaseyDeriso/Note-Today) ![GitHub Repo stars](https://img.shields.io/github/stars/CaseyDeriso/Note-Today?style=social) ![GitHub package.json version](https://img.shields.io/github/package-json/v/CaseyDeriso/Note-Today)
 
+## Deployed application
+
+[Link to deployed application](https://arcane-mesa-14449.herokuapp.com/)
+
 ## Description
 
 Note today is a note taking application. Add and save notes with the icons in the upper right portion of the nav. This project is built with express.js and is served using heroku. 
